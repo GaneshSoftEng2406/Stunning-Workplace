@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stunning Landing Page</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .class1 {
+        margin-top: 4px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 1px solid red; */
+      }
+      img {
+        padding: 10px;
+        /* border: 1px solid blue; */
+      }
+      .class2 {
+        padding: 20px;
+        /* border: 1px solid pink; */
+      }
+      .name {
+        padding: 30px;
+        color: #a4a09a;
+        font-weight: 600;
+      }
+      #id1:hover {
+        padding: 30px;
+        color: black;
+        font-weight: 900;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: #8071d0;
+        text-decoration: none;
+        text-decoration: underline;
+        text-decoration-thickness: 4px;
+      }
+      .button1 {
+        background-color: #ffd8db;
+        color: #a389cc;
+        padding: 15px;
+        border-radius: 20px;
+        border: 1px solid #ffd8db;
+        width: 115%;
+        font-weight: 600;
+        font-size: 10px;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+      }
+      /* .class3 {
+        border: 1px solid red;
+      } */
+      h1 {
+        padding: 20px;
+        margin-left: 160px;
+        font-size: 70px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .h1 {
+        border: 1px solid #44308c;
+        color: #44308c;
+        border-radius: 1px;
+        font-size: 10px;
+        background-color: #44308c;
+      }
+      p {
+        font-size: 18px;
+        padding-left: 181px;
+        color: #a4a09a;
+      }
+      .class4 {
+        display: flex;
+        /* border: 1px solid orange; */
+      }
+      .button2 {
+        width: 20%;
+        height: 45px;
+        margin-left: 180px;
+        margin-top: 28px;
+        background-color: #5243c0;
+        border: 1px solid #5243c0;
+        color: #ffff;
+        border-radius: 20px;
+        font-size: 10px;
+      }
+      .arrow {
+        margin-top: 22px;
+        background-color: #ffff;
+      }
+      /* .class5 {
+        border: 1px solid green;
+      } */
+      .list-item {
+        /* border: 1px solid violet; */
+        margin-top: 45px;
+        margin-left: 180px;
+      }
+      .list1 {
+        border: 1px solid #f2f3f3;
+        width: 75%;
+        justify-content: space-around;
+        margin: 6px 0;
+        background-color: #f2f3f3;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+          rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+          rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+          rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        position: relative;
+        display: flex;
+        transition: all 0.2s;
+      }
+      .list1:hover {
+        background-color: #ffff;
+        transition: all 0.2s;
+        transform: scale(1.05);
+        /* margin: 5px 0; */
+      }
+      .list {
+        margin-top: 12px;
+      }
+      #date {
+        color: #a4a09a;
+      }
+      .list1 .img-color {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 8px;
+        z-index: 99;
+      }
+      .list1:hover .img-color {
+        display: inline;
+      }
+      .butt {
+        height: 10px;
+        margin-top: 12px;
+        border-radius: 28px;
+        font-size: 8px;
+      }
+      #butt1 {
+        border: 1px solid #fed7da;
+        background-color: #fed7da;
+        color: #fed7da;
+        margin-top: 15px;
+      }
+      #butt2 {
+        border: 1px solid #fd6534;
+        background-color: #fd6534;
+        color: #fd6534;
+        margin-top: 15px;
+      }
+      #butt3 {
+        border: 1px solid #9ed095;
+        background-color: #9ed095;
+        color: #9ed095;
+        margin-top: 15px;
+      }
+      #butt4 {
+        border: 1px solid #ffe4a0;
+        background-color: #ffe4a0;
+        color: #ffe4a0;
+        margin-top: 15px;
+      }
+      .list:active {
+        color: red;
+      }
+      /* .img-color {
+        filter: opacity(0.4) drop-shadow(0 0 0 #ffff);
+      } */
+      /* .img-color:hover {
+        filter: opacity(0.4) drop-shadow(0 0 0 blue);
+
+      } */
+      /* #lit1:hover {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="class1">
+          <img
+            class="logo-img"
+            src="stunning-logo.png"
+            alt="stunning logo"
+            width="125px"
+            height="50px"
+          />
+        </div>
+        <div class="class2">
+          <a href="#"><span class="name" id="id1">Home</span></a>
+          <a href="#"><span class="name" id="id1">About</span></a>
+          <a href="#"><span class="name" id="id1">Blog</span></a>
+          <a href="#"><span class="name" id="id1">Jobs</span></a>
+        </div>
+        <div>
+          <button class="button1">Your Account</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="class3">
+        <h1>Stunning Workplace<span class="h1">ds</span></h1>
+        <p>
+          With Stunning, remote teams can organize projects,<br />
+          manage shifting priorities, and get work done .
+        </p>
+        <div class="class4">
+          <button class="button2">New Account</button>
+          <img class="arrow" src="arrow-up.png" alt="arrow-up" height="45px" />
+
+          <img
+            class="arrow"
+            src="arrow-down.png"
+            alt="arrow-down"
+            height="45px"
+          />
+        </div>
+        <div class="list-item">
+          <div class="list1">
+            <img src="tick-gray.png" alt="tick-gray" height="25px" />
+            <img
+              class="img-color"
+              src="tick-blue.png"
+              alt="tick-gray"
+              height="25px"
+            />
+            <span class="list">Dmm design</span>
+            <img
+              class="list"
+              src="user-pink.png"
+              alt="user-pink"
+              height="25px"
+              style="margin-top: -3px"
+            />
+            <span class="list" id="date">20 Dec</span>
+            <button class="butt" id="butt1">sssa</button>
+          </div>
+          <div class="list1">
+            <img
+              class="img-color"
+              src="tick-blue.png"
+              alt="tick-gray"
+              height="25px"
+            />
+            <img src="tick-gray.png" alt="tick-gray" height="25px" />
+            <span class="list">Blur animation</span>
+            <img
+              class="list"
+              src="user-orange.png"
+              alt="user-orange"
+              height="25px"
+              style="margin-top: -3px; margin-left: -15px"
+            />
+            <span class="list" id="date">22 Dec</span>
+            <button class="butt" id="butt2">sssa</button>
+          </div>
+          <div class="list1">
+            <img src="tick-gray.png" alt="tick-gray" height="25px" />
+            <img
+              class="img-color"
+              src="tick-blue.png"
+              alt="tick-gray"
+              height="25px"
+            />
+            <span class="list">Illustration</span>
+            <img
+              class="list"
+              src="user-blue.png"
+              alt="user-blue"
+              height="25px"
+              style="margin-top: -3px; margin-left: 10px"
+            />
+            <span class="list" id="date">26 Dec</span>
+            <button class="butt" id="butt3">sssa</button>
+          </div>
+          <div class="list1">
+            <img src="tick-gray.png" alt="tick-gray" height="25px" />
+            <img
+              class="img-color"
+              src="tick-blue.png"
+              alt="tick-gray"
+              height="25px"
+            />
+            <span class="list">Refunds</span>
+            <img
+              class="list"
+              src="user-red.png"
+              alt="user-red"
+              height="25px"
+              style="margin-top: -3px; margin-left: 22px"
+            />
+            <span class="list" id="date">28 Dec</span>
+            <button class="butt" id="butt4">sssa</button>
+          </div>
+        </div>
+      </div>
+      <div class="class5">
+        <img
+          src="landing-section-image.png"
+          alt="landing-section-image"
+          height="650px"
+        />
+      </div>
+    </main>
+  </body>
+</html>
